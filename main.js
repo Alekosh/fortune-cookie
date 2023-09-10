@@ -2,7 +2,7 @@
 const arrays = ['Тебе сегодня везет', 'Тебя понизят до Хлебера', 'Сегодня тебя повысят до Манагера', 'Завтра уходишь в псж'];
 
 const paper = document.querySelector('.paper p');
-document.querySelector('body').addEventListener('click', () => {
+const paperBody = document.querySelector('.paper').addEventListener('click', () => {
   let item = arrays[Math.floor(Math.random() * arrays.length)];
   paper.innerHTML = item;
 })
